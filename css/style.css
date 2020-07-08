@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imagem/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 2%;
+}
+
+
+/* Estilizar nav desktop */
+header nav.menu-desktop{
+    float: right;
+}
+
+
+header nav.menu-desktop ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop li{
+    padding: 0 20px;
+    float: left;
+    transition: 1s;
+}
+
+header nav.menu-desktop li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav.menu-desktop li:hover{
+    transition: 600ms;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+header nav.menu-desktop li a:hover{
+    transition: 600ms;
+    color: goldenrod;
+}
+
+/* Estilizar nav mobile */
+header nav.menu-mobile{
+    display: none;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-image: url('../imagem/menu.svg');
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin-top: -25px;
+}
+
+header nav.menu-mobile:hover ul{
+    opacity: 1;
+}
+
+header nav.menu-mobile ul{
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 75px;
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+}
+
+header nav.menu-mobile ul li{
+    padding: 8px 0;
+    transition: 400ms;
+    border-bottom: 1px solid black;
+}
+
+header nav.menu-mobile ul li:hover{
+    background-color: goldenrod;
+}
+
+header nav.menu-mobile ul li a{
+    color: rgb(68, 33, 68);
+    text-decoration: none;
+}
+
+
+/* Estilizar sessão serviços */
+
+section.servicos{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 2%;
+    /* background-color: rgba(30, 30, 30, 0.95); */
+    background-image: url('../imagem/banner3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+}
+
+section.servicos .container h2{
+    font-size: 36px;
+    padding-top: 5px;
+    text-align: center;
+    /* color: rgba(141, 140, 140, 0.856); */
+    color: white;
+    font-weight: normal;
+}
+
+section.servicos .servicos-box{
+    width: 33.333%;
+    height: 300px;
+    float: left;
+    padding-top: 45px;
+    padding-left: 15px;
+}
+
+section.servicos img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+section.servicos img:hover{
+    opacity: 0.85;
+}
+
+section.servicos .text{
+    text-align: center;
+}
+
+section.servicos .text p{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+    /* color: rgba(141, 140, 140, 0.856); */
+    color: white;
+}
+
+/* Estilizar sessão de agendamento */
+
+section.agendamento{
+    height: 100vh;
+    background-color: rgba(252, 252, 252, 0.979);
+    padding: 0 3%;
+}
+
+section.agendamento .container .calendar h2{
+    font-size: 36px;
+    padding-top: 5px;
+    text-align: center;
+    color: rgba(141, 140, 140, 0.856);
+    font-weight: normal;
+}
+
+.calendar iframe{
+    width: 100%;
+    height: 90vh;
+}
+
+/* Estilizar Sessão contato */
+
+section.contato{
+    width: 100%;
+    height: 100vh;
+    /* padding-top:20px; */
+    background-image: url('../imagem/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+}
+
+section.contato .form{
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+}
+
+section.contato .container h2{
+    font-size: 36px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    /* padding-bottom: 30px; */
+}
+
+section.contato .form h3{
+    color: white;
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+section.contato .form p{
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    max-width: 400px;
+    padding-right: 10px;
+    margin-top: 10px;
+    /* line-height: 30px; */
+}
+
+section.contato .form form{
+    margin-top: 15px;
+}
+
+section.contato .form form input[type=text],
+section.contato .form form input[type=email]{
+    width: 90%;
+    max-width: 480px;
+    height: 58px;
+    margin-top: 8px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+section.contato .form form textarea{
+    width: 90%;
+    max-width: 480px;
+    margin-top: 8px;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    height: 160px;
+}
+
+section.contato .form form input[type=submit]{
+    border: 0;
+    background-color: white;
+    width: 165px;
+    height: 44px;
+    font-size: 15px;
+    color: rgb(25, 25, 30);
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+section.contato .form form input[type=submit]:hover{
+    background-color: rgba(238, 229, 229, 0.932);
+    transition: 600ms;
+}
+
+section.contato .map-wraper{
+    width: 50%;
+    float: left;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+section.contato .map-wraper h3{
+    color: white;
+    font-size: 23px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+section.contato .map-wraper .map-wraper2{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+section.contato .map-wraper .map-wraper2 .map-wraper3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+section.contato .map-wraper .map-wraper2 .map-wraper3 .map{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+}
+
+/* Estilizando o footer */
+
+footer{
+    padding: 40px 2%;
+    color: rgb(25, 25, 30);
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    font-size: 14px;    
+}
+
+footer p:nth-of-type(2){
+    float: right;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

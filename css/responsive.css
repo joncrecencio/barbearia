@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px){
+    header nav.menu-desktop{
+        display: none;
+    }
+
+    header nav.menu-mobile{
+        display: block;
+    }
+    
+
+    section.servicos{
+        height: auto;
+    }
+
+    section.servicos .servicos-box{
+        width: 50%;
+        padding-top: 50px;
+        float: left;
+    }
+
+    section.contato{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    section.contato .form{
+        float: none;
+        width: 100%;
+    }
+
+    section.contato .form p{
+        display: inline-block;
+    }
+
+    section.contato .map-wraper{
+        float: none;
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 4%;
+    }
+
+    section.contato .map-wraper .map-wraper2{
+        display: inline-block;
+        max-width: none;
+        width: 80%;
+        padding-top: 80%;
+    }
+
+    section.contato .map-wraper .map-wraper2 .map-wraper3{
+        width: 100%;
+        height: 100%;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:555px){
+    section.servicos .servicos-box{
+        width: 100%;
+        height: auto;
+    }
+}

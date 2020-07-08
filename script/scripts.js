@@ -1,3 +1,3 @@
-function alerta{
-    console.log("teste")
+function chamada(){
+    console.log("teste");
 }
